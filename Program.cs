@@ -17,7 +17,7 @@ string PrintNumbers(int start, int end)
 */
 
 /*
-Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от N до M.
 */
 
 Console.WriteLine("Введите число N");
@@ -27,8 +27,9 @@ Console.WriteLine("Введите число M");
 int M = int.Parse(Console.ReadLine()!);
 
 int Sum = N;
+int Summa=SumNumbers(Sum, N, M);
 
-Console.WriteLine(SumNumbers(Sum, N, M));
+Console.WriteLine($"сумму натуральных элементов в промежутке от {N} до {M} равна = {Summa}");
 
 int SumNumbers(int Sum, int NumbN, int NumbM)
 {
